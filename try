@@ -1,4 +1,13 @@
-The main goal of this homework is three fold: 
+s a member function. This operator divides a polynomial by a scalar variable. Also, this operator is not allowed to change the calling object.  For instance, let p = 5.1 * x^10 + 7.2 * x^4 - 11.0,  p/2.0 = 2.55 * x^10 + 3.6 * x^4 - 5.50, but p will remain unchanged. (3 points)
+An overloaded negation operator (-) as a member function. This operator will negate the coefficient of each term in a polynomial. For instance, given p = 5.1 * x^10 + 7.2 * x^4 - 11.0, -p will not only change p to -5.1 * x^10 - 7.2 * x^4 + 11.0 but also returns this negated polynomial. (3 points)
+An overloaded addition (+) operator as a member function that sums up two polynomials.  This operator is not allowed to change either of the two polynomials participating in the addition and returns the sum as another polynomial.  For instance, let p1, p2, p3 be three polynomials, the statement "p3=p1+p2" will not change p1 or p2 and will save the sum to p3. (3 points)
+An overloaded subtraction (-) operator as a member function that subtract one polynomial from another. This operator is not allowed to change either of the two polynomials participating in the subtraction and returns the difference as another polynomial. For instance, let p1, p2, p3 be three polynomials, the statement "p3=p1-p2" will not change p1 or p2 and will save the subtraction result to p3. (3 points)
+Finally, overload the “put” operator (<<) as a friend of the above Polynomial ADT to print out a polynomial on an output stream.For instance, let p = 5.1 * x^10 + 7.2 * x^4 - 11.0, the statement "cout<<p;" will print out " 5.1 * x^10 + 7.2 * x^4 - 11.0" on the screen. (3 points)
+
+Lastly, in your main() function, please provide a user-friendly interface that allows the grader to test each and every function implemented above. (5 points)
+
+Part II.  A SquareMatrix ADT. 
+AThe main goal of this homework is three fold: 
 applying the problem-solving process to design and implement two ADTs to represent two types of objects; 
 implementing the ADTs using separate compilation; 
 practicing to use several common ADT features--const, explicit, and operator overloading.  
@@ -33,4 +42,3 @@ Finally, include an overloaded “put” operator (<<) as a friend function of t
                    ( 11.11, 12.12
                      21.21,  22.22)
  
-Lastly, in your main() function, please provide a user-friendly inte
